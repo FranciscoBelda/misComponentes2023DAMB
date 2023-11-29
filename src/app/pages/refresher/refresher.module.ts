@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RefresherPageRoutingModule } from './refresher-routing.module';
 
 import { RefresherPage } from './refresher.page';
+import {ComponentsModule} from "../../components/components.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RefresherPageRoutingModule
+    RefresherPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RefresherPage]
 })
