@@ -1,0 +1,77 @@
+[
+  {
+    "nombre": "Action Sheet",
+    "ruta": "/action-sheet",
+    "icono": "american-football"
+  },
+  {
+    "nombre": "Alert",
+    "ruta": "/alert",
+    "icono": "logo-apple-appstore"
+  },
+  {
+    "nombre": "Grid y Buttons",
+    "ruta": "/grid-buttons",
+    "icono": "grid"
+  },
+  {
+    "nombre": "Avatar",
+    "ruta": "/avatar",
+    "icono": "beaker"
+  },
+  {
+    "nombre": "Cards",
+    "ruta": "/card",
+    "icono": "card"
+  },
+  {
+    "nombre": "Fab",
+    "ruta": "/fab",
+    "icono": "car"
+  },
+  {
+    "nombre": "Slides",
+    "ruta": "/slides",
+    "icono": "albums"
+  },
+  {
+    "nombre": "Listas",
+    "ruta": "/list",
+    "icono": "list"
+  },
+  {
+    "nombre": "Infinite Scroll",
+    "ruta": "/infinite-scroll",
+    "icono": "infinite"
+  },
+  {
+    "nombre": "Infinite Scroll 2",
+    "ruta": "/infinite-scroll2",
+    "icono": "infinite-outline"
+  },
+  {
+    "nombre": "Slides 2",
+    "ruta": "/slides2",
+    "icono": "albums-outline"
+  },
+  {
+    "nombre": "Modal",
+    "ruta": "/modal",
+    "icono": "phone-portrait"
+  },
+  {
+    "nombre": "Tabs",
+    "ruta": "/tabs",
+    "icono": "cog"
+  },
+  {
+    "nombre": "Refresher y Skeleton",
+    "ruta": "/refresher",
+    "icono": "arrow-down-circle-outline"
+  },
+  {
+    "nombre": "Accordion",
+    "ruta": "/accordion",
+    "icono": "layers-outline"
+  }
+]

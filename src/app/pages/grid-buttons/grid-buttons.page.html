@@ -1,0 +1,82 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Grid y Buttons</ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+      <ion-button color="warning">
+        <ion-icon name="star"></ion-icon>
+      </ion-button>
+      <ion-menu-button menu="primerMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" size="small">Small</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" size="medium">Medium</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button expand="full" size="large">Large</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin-top">
+      <ion-col>
+        <ion-button routerLink="/alert"
+                    color="primary" fill="clear">Alert
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/action-sheet"
+                    color="secondary" fill="solid">A-Sheet
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button routerLink="/"
+                    color="tertiary" fill="outline">Inicio
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed="true">
+    <ion-row>
+      <ion-col *ngFor="let column of [1,1,1,1,1,1]; let i = index">
+        Item {{i + 1}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid fixed="true">
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" size-lg="3"
+               *ngFor="let col of [1,2,3,4,5,6,7,8,9,10,11,12];let ind = index">
+        <ion-card>
+          <ion-img src="/assets/shapes.svg"></ion-img>
+          <ion-card-header>
+            <ion-card-subtitle>
+              Card Subtitle {{col}}
+            </ion-card-subtitle>
+            <ion-card-title>
+              Card Title {{ind+1}}
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur distinctio, eaque eligendi
+            enim et hic, id, laboriosam laudantium magni minima modi natus nesciunt nisi quia quo similique voluptate
+            voluptates.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
