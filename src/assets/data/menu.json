@@ -73,5 +73,20 @@
     "nombre": "Accordion",
     "ruta": "/accordion",
     "icono": "layers-outline"
+  },
+  {
+    "nombre": "Accordion 2",
+    "ruta": "/accordion2",
+    "icono": "layers"
+  },
+  {
+    "nombre": "Refresher y Skeleton v2",
+    "ruta": "/refresher2",
+    "icono": "arrow-down-circle"
+  },
+  {
+    "nombre": "Popover",
+    "ruta": "/popover",
+    "icono": "flame"
   }
 ]

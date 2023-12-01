@@ -71,6 +71,22 @@ const routes: Routes = [
     path: 'refresher',
     loadChildren: () => import('./pages/refresher/refresher.module').then( m => m.RefresherPageModule)
   },
+  {
+    path: 'refresher2',
+    loadChildren: () => import('./pages/refresher2/refresher2.module').then( m => m.Refresher2PageModule)
+  },
+  {
+    path: 'accordion2',
+    loadChildren: () => import('./pages/accordion2/accordion2.module').then( m => m.Accordion2PageModule)
+  },
+  {
+    path: 'popover',
+    loadChildren: () => import('./pages/popover/popover.module').then( m => m.PopoverPageModule)
+  },
+  {
+    path: 'popover-content',
+    loadChildren: () => import('./pages/popover-content/popover-content.module').then( m => m.PopoverContentPageModule)
+  },
 ];
 
 @NgModule({
