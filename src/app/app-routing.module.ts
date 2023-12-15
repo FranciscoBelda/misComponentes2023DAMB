@@ -87,6 +87,14 @@ const routes: Routes = [
     path: 'popover-content',
     loadChildren: () => import('./pages/popover-content/popover-content.module').then( m => m.PopoverContentPageModule)
   },
+  {
+    path: 'search-bar',
+    loadChildren: () => import('./pages/search-bar/search-bar.module').then( m => m.SearchBarPageModule)
+  },
+  {
+    path: 'search-bar2',
+    loadChildren: () => import('./pages/search-bar2/search-bar2.module').then( m => m.SearchBar2PageModule)
+  },
 ];
 
 @NgModule({

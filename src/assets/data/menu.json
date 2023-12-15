@@ -88,5 +88,15 @@
     "nombre": "Popover",
     "ruta": "/popover",
     "icono": "flame"
+  },
+  {
+    "nombre": "Search Bar",
+    "ruta": "/search-bar",
+    "icono": "search"
+  },
+  {
+    "nombre": "Search Bar 2",
+    "ruta": "/search-bar2",
+    "icono": "search-outline"
   }
 ]
