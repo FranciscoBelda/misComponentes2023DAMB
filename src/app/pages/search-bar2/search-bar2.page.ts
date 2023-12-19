@@ -19,12 +19,10 @@ export class SearchBar2Page implements OnChanges {
     this.loadUsers();
   }
 
-
-
   private loadUsers() {
     this.dataService.getOtherUsers().subscribe(
       {
-        next: (value: any) => {
+        next: (value) => {
           this.users = value.results;
           this.filtered = this.users;
         },
@@ -51,7 +49,7 @@ export class SearchBar2Page implements OnChanges {
   leaf = (obj: any) => this.itemTextField.split('.')
     .reduce((value, el) => value[el], obj);
 
-  itemSelection(myItem: any){
+  itemSelected(myItem: any){
     if(!this.multiple) {
       if(this.selected.length){
         this.selected = [];

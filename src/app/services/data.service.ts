@@ -6,6 +6,7 @@ import {Usuario} from "../common/users";
 import {environment} from "../../environments/environment";
 import {ApiPeliculas} from "../common/peliculas";
 import {Album} from "../common/albums";
+import {ApiResultRandomUsers} from "../common/randomUsers";
 
 @Injectable({
   providedIn: 'root'
@@ -31,7 +32,7 @@ export class DataService {
       `${environment.baseUrl}movie/popular?api_key=${environment.apiKey}&page=${page}`);
   }
 
-  getOtherUsers() {
-    return this.http.get<any[]>('https://randomuser.me/api/?results=100&seed=Progresa');
+  getOtherUsers(): Observable<ApiResultRandomUsers> {
+    return this.http.get<ApiResultRandomUsers>('https://randomuser.me/api/?results=100&seed=Progresa');
   }
 }
